@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "922-Studio",
+    "tagline": "A small group of hobby developers building real things.",
+    "subtitle": "Web apps, APIs, games, and self-hosted infrastructure — shipped and running."
+  },
+  "collaborators": {
+    "heading": "The Team",
+    "portfolio_link": "Portfolio"
+  },
+  "timeline": {
+    "heading": "Timeline"
+  },
+  "projects": {
+    "heading": "Projects",
+    "filter_all": "All",
+    "filter_backend": "Backend",
+    "filter_frontend": "Frontend",
+    "filter_app": "App",
+    "filter_infra": "Infrastructure",
+    "visit": "Visit"
+  },
+  "blog": {
+    "heading": "Blog",
+    "read_more": "Read more",
+    "back": "Back to blog",
+    "by": "by"
+  },
+  "footer": {
+    "built_with": "Built with"
+  },
+  "theme": {
+    "toggle_dark": "Toggle dark mode",
+    "toggle_light": "Toggle light mode"
+  }
+}

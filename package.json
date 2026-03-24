@@ -1,0 +1,47 @@
+{
+  "name": "studio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "playwright test",
+    "test:install": "playwright install --with-deps chromium",
+    "test:unit": "vitest",
+    "test:unit:ci": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.2.1",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^0.575.0",
+    "next": "16.1.6",
+    "next-intl": "^4.8.3",
+    "next-mdx-remote": "^5.0.0",
+    "postcss": "^8.5.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "reading-time": "^1.5.0",
+    "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/coverage-v8": "^2.1.9",
+    "allure-playwright": "^3.5.0",
+    "allure-vitest": "3.5.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "jsdom": "^27.4.0",
+    "typescript": "^5",
+    "vitest": "^2.1.9"
+  }
+}
