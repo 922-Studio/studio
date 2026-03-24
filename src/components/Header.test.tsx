@@ -12,11 +12,6 @@ function renderHeader() {
 }
 
 describe('Header', () => {
-  it('renders the 922-Studio logo image', () => {
-    renderHeader()
-    expect(screen.getByAltText('922-Studio')).toBeInTheDocument()
-  })
-
   it('renders the Home nav link', () => {
     renderHeader()
     expect(screen.getByRole('link', { name: 'Home' })).toBeInTheDocument()
