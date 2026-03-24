@@ -13,7 +13,7 @@ test.describe('Home page', () => {
 
   test('shows collaborators section', async ({page}) => {
     await page.goto('/en');
-    await expect(page.getByRole('heading', {name: 'The Team'})).toBeVisible();
+    await expect(page.getByRole('heading', {name: 'Developer'})).toBeVisible();
     await expect(page.getByText('Gregor Krykon')).toBeVisible();
     await expect(page.getByText('Iustus Krykon')).toBeVisible();
   });

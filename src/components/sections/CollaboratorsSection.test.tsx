@@ -26,7 +26,7 @@ vi.mock('@/lib/content', () => ({
 describe('CollaboratorsSection', () => {
   it('renders the section heading', () => {
     render(<CollaboratorsSection />)
-    expect(screen.getByRole('heading', { name: 'The Team' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Developer' })).toBeInTheDocument()
   })
 
   it('renders Gregor Krykon card', () => {
