@@ -13,8 +13,8 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     setupFiles: process.env.ALLURE_RESULTS_DIR
-      ? ['allure-vitest/setup', './src/test/setup.ts']
-      : ['./src/test/setup.ts'],
+      ? ['allure-vitest/setup', path.resolve(__dirname, 'src/test/setup.ts')]
+      : [path.resolve(__dirname, 'src/test/setup.ts')],
     exclude: ['**/node_modules/**', '**/dist/**', '**/e2e/**'],
     reporters: process.env.ALLURE_RESULTS_DIR
       ? [
