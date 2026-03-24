@@ -12,9 +12,9 @@ function renderHeader() {
 }
 
 describe('Header', () => {
-  it('renders the 922 logo', () => {
+  it('renders the 922-Studio logo image', () => {
     renderHeader()
-    expect(screen.getByText('922')).toBeInTheDocument()
+    expect(screen.getByAltText('922-Studio')).toBeInTheDocument()
   })
 
   it('renders the Home nav link', () => {

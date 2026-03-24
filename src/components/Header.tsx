@@ -1,6 +1,7 @@
 'use client';
 
 import {useState, useEffect, useRef} from 'react';
+import Image from 'next/image';
 import {Github} from 'lucide-react';
 import {usePathname, Link} from '@/i18n/navigation';
 import {LanguageSwitcher} from './LanguageSwitcher';
@@ -41,13 +42,13 @@ export function Header() {
             e.preventDefault();
             window.scrollTo({top: 0, behavior: 'smooth'});
           }}
-          className="font-heading text-lg font-bold text-gradient"
+          className="flex items-center"
         >
-          922
+          <Image src="/922-studio-logo.png" alt="922-Studio" width={36} height={36} className="rounded-lg" />
         </a>
       ) : (
-        <Link href="/" className="font-heading text-lg font-bold text-gradient">
-          922
+        <Link href="/" className="flex items-center">
+          <Image src="/922-studio-logo.png" alt="922-Studio" width={36} height={36} className="rounded-lg" />
         </Link>
       )}
 

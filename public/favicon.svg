@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer frame -->
+  <rect width="64" height="64" rx="14" fill="#0A0A0B"/>
+
+  <!-- Window -->
+  <rect x="5" y="9" width="54" height="46" rx="8" fill="#0D0B1A" stroke="#6366f140" stroke-width="1.5"/>
+
+  <!-- Titlebar -->
+  <rect x="5" y="9" width="54" height="17" rx="8" fill="#131022"/>
+  <rect x="5" y="17" width="54" height="9" fill="#131022"/>
+
+  <!-- Traffic lights -->
+  <circle cx="13" cy="17.5" r="3" fill="#FF5F57"/>
+  <circle cx="22" cy="17.5" r="3" fill="#FFBD2E"/>
+  <circle cx="31" cy="17.5" r="3" fill="#28C840"/>
+
+  <!-- > 922 -->
+  <text x="7" y="47" font-family="JetBrains Mono,monospace" font-size="22" font-weight="700" fill="url(#a)">></text>
+  <text x="22" y="47" font-family="JetBrains Mono,monospace" font-size="22" font-weight="700" fill="url(#b)">922</text>
+</svg>

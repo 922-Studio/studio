@@ -60,6 +60,9 @@ export async function generateMetadata({params}: {params: Promise<{locale: strin
     twitter: {
       card: 'summary_large_image',
     },
+    icons: {
+      icon: '/favicon.svg',
+    },
   };
 }
 
