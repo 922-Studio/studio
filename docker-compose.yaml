@@ -20,6 +20,7 @@ services:
       - "traefik.http.routers.studio.rule=Host(`studio.922-studio.com`)"
       - "traefik.http.routers.studio.entrypoints=web"
       - "traefik.http.services.studio.loadbalancer.server.port=3000"
+      - "922.group=Live Pages"
 
 networks:
   proxy:
