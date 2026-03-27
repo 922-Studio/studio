@@ -1,0 +1,26 @@
+services:
+  studio:
+    image: registry.922-studio.com/studio:${IMAGE_TAG:-prod}
+    container_name: ${CONTAINER_NAME:-studio}
+    restart: unless-stopped
+    networks:
+      - proxy
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"fetch('http://localhost:3000/').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))\""]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 15s
+    labels:
+      # Watchtower: auto-update this container
+      - "com.centurylinklabs.watchtower.enable=true"
+      # Traefik routing
+      - "traefik.enable=true"
+      - "traefik.http.routers.studio.rule=Host(`studio.922-studio.com`)"
+      - "traefik.http.routers.studio.entrypoints=web"
+      - "traefik.http.services.studio.loadbalancer.server.port=3000"
+      - "922.group=Live Pages"
+
+networks:
+  proxy:
+    external: true
